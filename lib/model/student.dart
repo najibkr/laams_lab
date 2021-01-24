@@ -103,4 +103,90 @@ class Student {
   DateTime get posponeDate => _postponeDate;
   List<String> get examsResults => _examsResults;
   List<Course> get courses => _courses;
+
+  // Setters:
+  void setId(String newId){
+    _id = newId;
+  }
+  void setPassport(String newPassport){
+    _passport = newPassport;
+  }
+  void setNationalID(String newNationalID){
+    _nationalID = newNationalID;
+  }
+  void setStatus(StudentStatus newStatus){
+    _status = newStatus;
+  }
+  void setGrade(String newGrade){
+    _grade = newGrade;
+  }
+  // Basic Info:
+  void setFirstName(String newFirstName){
+    _firstName = newFirstName;
+  }
+  void setLastName(String newLastName){
+    _lastName = newLastName;
+  }
+  void setFatherName(String newFatherName){
+    _fatherName = newFatherName;
+  }
+  void setGrandFatherName(String newGrandFatherName){
+    _grandFatherName  = newGrandFatherName;
+  }
+  void setMotherName(String newMotherName){
+    _motherName = newMotherName;
+  }
+  void setDateOfBirth(DateTime newDateOfBirth){
+    _dateOfBirth = newDateOfBirth;
+  }
+  void setAge(DateTime newAge){
+    _dateOfBirth = newAge;
+  }
+  void setGender(String newGender){
+    _gender = newGender;
+  }
+  void setNativeLanguage(String newNativeLanguage){
+    _nativeLanguage = newNativeLanguage;
+  }
+  void setResidentialAddress(Address newResidentialAddress){
+    _residentialAddress = newResidentialAddress;
+  }
+  void setPermanentAddress(Address newPermanentAddress){
+    _permanentAddress = newPermanentAddress;
+  }
+  void setEmail(String newEmail){
+    _email = newEmail;
+  }
+  void setPassword(String newPassword){
+    _password = newPassword;
+  }
+  void setPhoneNo(String newPhoneNo){
+    _phoneNo = newPhoneNo;
+  }
+  // Datas: 
+  void setRegistrationDate(DateTime newRegistrationDate){
+    _registartionDate = newRegistrationDate;
+  }
+  void setGraduationDate(DateTime newGraduationDate){
+    _graduationDate = newGraduationDate;
+  }
+  void setExpellsionDate(DateTime newExpellsionDate){
+    _expellsionDate = newExpellsionDate;
+  }
+  void setDropOutDate(DateTime newDropOutDate){
+    _dropOuteDate = newDropOutDate;
+  } 
+  void setTransferDate(DateTime newTransferDate){
+    _transferDate = newTransferDate;
+  }
+  void setPosponeDate(DateTime newPosponeDate){
+    _postponeDate = newPosponeDate;
+  }
+  void setExamsResults(List<String> newExamsResults){
+    _examsResults = newExamsResults;
+  }
+  void setCourses(List<Course> newCourses){
+    _courses = newCourses;
+  }
+
 }
