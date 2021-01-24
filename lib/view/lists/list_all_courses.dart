@@ -4,7 +4,7 @@ import 'package:project01/model/course.dart';
 import 'package:project01/view/components/card_course_a.dart';
 import 'package:project01/view/screens/screen_course_detail.dart';
 
-import '../../app_navigator.dart';
+import '../../app_nav.dart';
 
 class ListAllCourses extends StatelessWidget {
   @override
@@ -14,8 +14,11 @@ class ListAllCourses extends StatelessWidget {
       itemCount: courses.length,
       itemBuilder: (BuildContext context, int index) {
         return CardCourseA(
-          onPressed: () => Navigator.of(context)
-              .pushNamed(CourseDetailPage, arguments: courses[index]),
+          onPressed: () => AppNav.push(
+            context,
+            ScreenCourseDetail.routeName,
+            args: courses[index],
+          ),
           courseTitle: courses[index].title,
           duration: "${courses[index].startDate} | ${courses[index].endDate}",
           vectorURL: "Not available yet",

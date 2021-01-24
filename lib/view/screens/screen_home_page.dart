@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:project01/app_navigator.dart';
+import 'package:project01/app_nav.dart';
 import 'package:project01/view/screens/screen_all_courses.dart';
+import 'package:project01/view/screens/screen_students.dart';
 
 class ScreenHomePage extends StatelessWidget {
+  static const String routeName = "/";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,9 +18,7 @@ class ScreenHomePage extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: [
           RaisedButton(
-            onPressed: () {
-              Navigator.of(context).pushNamed(CoursesPage);
-            },
+            onPressed: () => AppNav.push(context, ScreenCourses.routeName),
             child: Text("Courses"),
           ),
           RaisedButton(
@@ -26,7 +26,7 @@ class ScreenHomePage extends StatelessWidget {
             child: Text("Instructors"),
           ),
           RaisedButton(
-            onPressed: () {},
+            onPressed: () => AppNav.push(context, ScreenStudents.routeName),
             child: Text("Students"),
           ),
         ],

@@ -3,25 +3,31 @@ import 'package:flutter/material.dart';
 import 'package:project01/view/screens/screen_all_courses.dart';
 import 'package:project01/view/screens/screen_course_detail.dart';
 import 'package:project01/view/screens/screen_home_page.dart';
+import 'package:project01/view/screens/screen_students.dart';
 
 import 'view/screens/screen_unknown_route.dart';
 
-class AppNavigator {
+class AppNav {
   static Route<dynamic> generateRoutes(RouteSettings settings) {
     switch (settings.name) {
-      case HomePage:
+      case ScreenHomePage.routeName:
         return MaterialPageRoute(
           builder: (context) => ScreenHomePage(),
           settings: settings,
         );
-      case CoursesPage:
+      case ScreenCourses.routeName:
         return MaterialPageRoute(
-          builder: (context) => ScreenAllCourses(),
+          builder: (context) => ScreenCourses(),
           settings: settings,
         );
-      case CourseDetailPage:
+      case ScreenCourseDetail.routeName:
         return MaterialPageRoute(
           builder: (context) => ScreenCourseDetail(course: settings.arguments),
+          settings: settings,
+        );
+      case ScreenStudents.routeName:
+        return MaterialPageRoute(
+          builder: (context) => ScreenStudents(),
           settings: settings,
         );
       default:
@@ -31,9 +37,12 @@ class AppNavigator {
         );
     }
   }
+
+  static Future<T> push<T extends Object>(
+    BuildContext context,
+    String routeName, {
+    Object args,
+  }) {
+    return Navigator.of(context).pushNamed(routeName, arguments: args);
+  }
 }
-
-const String HomePage = "/";
-
-const String CoursesPage = "/courses";
-const String CourseDetailPage = '/coursedetail';
