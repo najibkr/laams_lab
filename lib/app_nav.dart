@@ -5,6 +5,9 @@ import 'package:project01/view/screens/screen_course_detail.dart';
 import 'package:project01/view/screens/screen_home_page.dart';
 import 'package:project01/view/screens/screen_students.dart';
 
+import 'view/screens/screen_all_courses.dart';
+import 'view/screens/screen_course_detail.dart';
+import 'view/screens/screen_home_page.dart';
 import 'view/screens/screen_unknown_route.dart';
 
 class AppNav {
