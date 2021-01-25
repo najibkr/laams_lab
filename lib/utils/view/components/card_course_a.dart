@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:project01/view/screens/screen_course_detail.dart';
 
 class CardCourseA extends StatelessWidget {
   final void Function() onPressed;

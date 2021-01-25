@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:project01/model/course.dart';
+import 'package:project01/course/entities/course.dart';
 
 class ScreenCourseDetail extends StatelessWidget {
   static const String routeName = "/coursedetail";

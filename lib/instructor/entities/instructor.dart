@@ -1,9 +1,5 @@
-import 'dart:html';
-
-import 'package:flutter/material.dart';
-
-import 'aggregates/address.dart';
-import 'course.dart';
+import '../../utils/model/aggregates/address.dart';
+import '../../course/entities/course.dart';
 
 class Instructor {
   //IDs
@@ -146,7 +142,7 @@ class Instructor {
     _permanentAddress = newPermanentAddresss;
   }
 
-  void setDateOfBirth(DataTime newDateOfBirth) {
+  void setDateOfBirth(DateTime newDateOfBirth) {
     _dateOfBirth = newDateOfBirth;
   }
 

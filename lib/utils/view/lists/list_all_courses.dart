@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:project01/model/course.dart';
-import 'package:project01/view/components/card_course_a.dart';
-import 'package:project01/view/screens/screen_course_detail.dart';
+import 'package:project01/course/entities/course.dart';
+import 'package:project01/utils/view/components/card_course_a.dart';
+import 'package:project01/utils/view/screens/screen_course_detail.dart';
 
-import '../../app_nav.dart';
+import '../../../app_nav.dart';
 
 class ListAllCourses extends StatelessWidget {
   @override

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:project01/app_nav.dart';
-import 'package:project01/view/screens/screen_all_courses.dart';
-import 'package:project01/view/screens/screen_students.dart';
+
+import 'screen_all_courses.dart';
+import 'screen_students.dart';
 
 class ScreenHomePage extends StatelessWidget {
   static const String routeName = "/";

@@ -1,4 +1,4 @@
-import 'package:project01/model/instructor.dart';
+import '../../instructor/entities/instructor.dart';
 
 class Course {
   String _id;
@@ -37,6 +37,7 @@ class Course {
   DateTime get startDate => _startDate;
   DateTime get endDate => _endDate;
 
+  /// Class Variables and Methods, No need to touch
   static List<Course> getCourses() {
     return [
       Course(

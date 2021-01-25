@@ -1,35 +1,61 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:project01/view/screens/screen_all_courses.dart';
-import 'package:project01/view/screens/screen_course_detail.dart';
-import 'package:project01/view/screens/screen_home_page.dart';
-import 'package:project01/view/screens/screen_students.dart';
-
-import 'view/screens/screen_unknown_route.dart';
+import 'package:project01/ace/views/screens/screen_ace_home.dart';
+import 'package:project01/admin/views/screens/screen_admin_home.dart';
+import 'package:project01/app_authenticator.dart';
+import 'package:project01/instructor/views/screens/screen_instructor_home.dart';
+import 'package:project01/student/views/screens/screen_student_home.dart';
+import 'utils/view/screens/screen_unknown_route.dart';
 
 class AppNav {
   static Route<dynamic> generateRoutes(RouteSettings settings) {
     switch (settings.name) {
-      case ScreenHomePage.routeName:
+      case AppAuthenticator.route:
         return MaterialPageRoute(
-          builder: (context) => ScreenHomePage(),
+          builder: (context) => AppAuthenticator(),
           settings: settings,
         );
-      case ScreenCourses.routeName:
+      case ScreenAceHome.route:
         return MaterialPageRoute(
-          builder: (context) => ScreenCourses(),
+          builder: (context) => ScreenAceHome(),
           settings: settings,
         );
-      case ScreenCourseDetail.routeName:
+      case ScreenAdminHome.route:
         return MaterialPageRoute(
-          builder: (context) => ScreenCourseDetail(course: settings.arguments),
+          builder: (context) => ScreenAdminHome(),
           settings: settings,
         );
-      case ScreenStudents.routeName:
+      case ScreenInstructorHome.route:
         return MaterialPageRoute(
-          builder: (context) => ScreenStudents(),
+          builder: (context) => ScreenInstructorHome(),
           settings: settings,
         );
+      case ScreenStudentHome.route:
+        return MaterialPageRoute(
+          builder: (context) => ScreenStudentHome(),
+          settings: settings,
+        );
+      // case ScreenCourses.routeName:
+      //   return MaterialPageRoute(
+      //     builder: (context) => ScreenCourses(),
+      //     settings: settings,
+      //   );
+      // case ScreenCourseDetail.routeName:
+      //   return MaterialPageRoute(
+      //     builder: (context) => ScreenCourseDetail(course: settings.arguments),
+      //     settings: settings,
+      //   );
+      // case ScreenStudents.routeName:
+      //   return MaterialPageRoute(
+      //     builder: (context) => ScreenStudents(),
+      //     settings: settings,
+      //   );
+      // case ScreenStudentProfile.routeName:
+      //   return MaterialPageRoute(
+      //     builder: (context) =>
+      //         ScreenStudentProfile(student: settings.arguments),
+      //     settings: settings,
+      //   );
       default:
         return MaterialPageRoute(
           builder: (context) => ScreenUnknownRoute(),
