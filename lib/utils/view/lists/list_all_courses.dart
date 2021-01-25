@@ -19,8 +19,8 @@ class ListAllCourses extends StatelessWidget {
             ScreenCourseDetail.routeName,
             args: courses[index],
           ),
-          courseTitle: courses[index].title,
-          duration: "${courses[index].startDate} | ${courses[index].endDate}",
+          courseTitle: "",
+          duration: "",
           vectorURL: "Not available yet",
         );
       },

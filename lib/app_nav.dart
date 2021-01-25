@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:project01/ace/views/screens/screen_ace_home.dart';
-import 'package:project01/admin/views/screens/screen_admin_home.dart';
-import 'package:project01/app_authenticator.dart';
-import 'package:project01/instructor/views/screens/screen_instructor_home.dart';
-import 'package:project01/student/views/screens/screen_student_home.dart';
+
+import 'ace/views/screens/screen_ace_home.dart';
+import 'admin/views/screens/screen_admin_home.dart';
+import 'app_authenticator.dart';
+import 'instructor/views/screens/screen_instructor_home.dart';
+import 'student/views/screens/screen_student_home.dart';
 import 'utils/view/screens/screen_unknown_route.dart';
 
 class AppNav {

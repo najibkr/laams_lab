@@ -10,10 +10,10 @@ class ScreenCourseDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(course.title)),
+      appBar: AppBar(title: Text("")),
       body: Center(
         child: Text(
-          "${course.startDate} | ${course.endDate}",
+          "",
         ),
       ),
     );
