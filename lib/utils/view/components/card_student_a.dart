@@ -54,11 +54,11 @@ class CardStudentA extends StatelessWidget {
                   ),
                   TagTitleDetail(
                     title: "Student Status:",
-                    detail: "${student.status}",
+                    detail: "$student",
                   ),
                   TagTitleDetail(
                     title: "Grade:",
-                    detail: "${student.grade}",
+                    detail: "$student",
                   ),
                 ],
               ),

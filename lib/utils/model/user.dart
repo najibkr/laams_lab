@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 
 import 'aggregates/address.dart';
 
-class User {
+abstract class User {
   // Account Related:
   String _id;
   String _password;
@@ -177,13 +177,4 @@ class User {
     if (isWestern) return "$_firstName $_lastName";
     return "$_lastName, $firstName";
   }
-}
-
-class Hello {
-  String hello;
-  Hello(this.hello);
-}
-
-class HowAreYour extends Hello {
-  HowAreYour(String hello) : super(hello);
 }

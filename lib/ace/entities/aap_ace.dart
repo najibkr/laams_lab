@@ -2,8 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:project01/utils/model/aggregates/address.dart';
 import 'package:project01/utils/model/user.dart';
 
-class Student extends User {
-  Student({
+class AppAce extends User {
+  AppAce({
     // Acount Related
     @required String id,
     @required String password,
@@ -44,8 +44,4 @@ class Student extends User {
           residentialAddress: residentialAddress,
           permanentAddress: permanentAddress,
         );
-
-  static List<Student> getStudents() {
-    return [];
-  }
 }
